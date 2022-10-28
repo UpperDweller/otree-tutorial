@@ -1,0 +1,14 @@
+{{ block title }}
+    Results
+{{ endblock }}
+
+{{ block content }}
+Your contribution: {{player.contribution}} <br>
+Total Contributions: {{group.total_contribution}}<br>
+The return from the project: {{player.returned|to2}} <br>
+Your total return this round: {{round_payoff|to2}} <br>
+Your account balance after this round: {{player.balance|to2}}
+    {{ next_button }}
+{{ endblock }}
+
+
